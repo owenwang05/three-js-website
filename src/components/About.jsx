@@ -49,6 +49,17 @@ const About = () => {
         Three.js. I'm a quick learner and collaborate closely with clients to
         create efficient, scalable, and user-friendly solutions that solve
         real-world problems. Let's work together to bring your ideas to life!
+        
+        My name is David Hu-Liu, currently a freshman at the University of Waterloo studying Computer Science and at Wilfrid Laurier studying Business. I have a strong interest in Machine Learning and Data Science, full-stack development, Graphic/UX design, and creating products that address real-life problems.
+
+
+I understand the key principles of data science, along with the underlying mathematics driving machine learning algorithms. I’ve used javascript and React to create full-stack applications, and utilized various python libraries to create neural networks and object detection.
+
+
+I want to continue learning about important technologies because I believe technology, including software, has the capacity to shape our future and address societal problems such as sustainability, equality/access to technology, and education. Technology has historically been a catalyst in improving our quality of life, and the future will be no different.
+
+
+With open arms, I seek to collaborate with others with the shared mindset that technology can drive positive social change. Outside of computer science, my hobbies include snowboarding, fitness, philosophy, and poker.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
