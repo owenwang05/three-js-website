@@ -1,4 +1,4 @@
-import { React, useEffect, useState } from 'react'
+import { React, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { styles } from '../styles'
 import { navLinks } from '../constants'
@@ -10,7 +10,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false)
 
   return (
-    <nav className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}>
+    <nav className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 backdrop-filter backdrop-blur-lg border-b border-[#162435]`}>
 
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link 
@@ -21,18 +21,18 @@ const Navbar = () => {
             window.scrollTo(0, 0)
           }}
         >
-          <img src={logo} alt="logo" className="w-9 h-9 object-contain"/>
+          <img src={logo} alt="logo" className="w-9 h-9 object-cover rounded-full"/>
           <p className="text-white text-lg font-bold cursor-pointer">
-            Owen | UIUC
+            Owen Wang
           </p>
         </Link>
 
-        <ul className="list-none hidden sm:flex flex-row gap-10">
+        <ul className="list-none hidden sm:flex flex-row gap-4">
           {navLinks.map((link) => (
             <li 
               key={link.id}
               className={
-                `${active === link.title ? "text-white" : "text-secondary"} hover:text-white text-lg font-medium cursor pointer`
+                `${active === link.title ? "text-white" : "text-secondary"} hover:text-white text-lg font-medium cursor pointer px-3 py-2 hover:bg-[#221c41] rounded-xl`
               }
               onClick={() => setActive(link.title)}
             >
