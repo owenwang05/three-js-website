@@ -9,7 +9,7 @@ import { SectionWrapper } from './hoc'
 
 const ServiceCard = ({index, title, icon}) => {
   return(
-    <Tilt className="xs:w-[250px] xxl:w-[300] w-full">
+    <Tilt className="xs:w-[250px] xxl:w-[300px] w-full">{/* you can remove the flex here */}
       <motion.div
         variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
         className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
@@ -22,8 +22,8 @@ const ServiceCard = ({index, title, icon}) => {
           }}
           className="bg-tertiary rounded-[20px] py-5 px-12 xxl:py-8 xxl:px-18 min-h-[280px] xxl:min-h-[330px] flex flex-col items-center justify-evenly"
         >
-          <img src={icon} alt={title} className="w-16 h-16 object.contain"/>
-          <h3 className="text-white text-[20px] font-bold text-center">{title}</h3>
+          <img src={icon} alt={title} className="w-16 h-16 xxl:w-18 xxl:h-18 object.contain"/>
+          <h3 className="text-white text-[20px] xxl:text-[24px] font-bold text-center">{title}</h3>
         </div>
       </motion.div>
     </Tilt>
@@ -55,7 +55,7 @@ const About = () => {
         message me about any new opportunities or if you would like to have a conversation!
       </motion.p>
 
-      <div className="mt-16 flex flex-wrap gap-10">
+      <div className="mt-16 flex flex-wrap gap-10 justify-center items-center">
         {services.map((service, index) => (
           <ServiceCard title={service.title} index={index} {...service}/>
         ))}
