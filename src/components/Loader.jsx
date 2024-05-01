@@ -8,7 +8,7 @@ const Loader = () => {
   return (
     <Html>
       <span className="canvas-load"></span>
-      <p style={{
+      <div style={{
           fontSize: 14, 
           color: '#f1f1f1',
           fontWeight: 800,
@@ -16,7 +16,7 @@ const Loader = () => {
         }}
       >
         {progress.toFixed(2)}%
-      </p>
+      </div>
     </Html>
   ) 
 }
