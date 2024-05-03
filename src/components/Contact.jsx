@@ -41,7 +41,7 @@ const Contact = () => {
   }
 
   return (
-    <div className="xl:flex-row flex-col-reverse flex gap-10 overflow-hidden xxl:mb-[125px]">
+    <div className="xl:flex-row flex-col-reverse flex gap-10 overflow-hidden xxl:mb-[125px] mt-6">
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
         className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
@@ -52,7 +52,7 @@ const Contact = () => {
         <form
           ref={formRef}
           onSubmit={handleSubmit}
-          className="mt-6 flex flex-col gap-8 xxl:gap-12"
+          className="mt-3 flex flex-col gap-8 xxl:gap-12"
         >
 
           <label className="flex flex-col">
