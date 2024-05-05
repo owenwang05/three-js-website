@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { styles } from '../../styles'
-import { LoadingBubble } from '..'
+import { LoadingDots } from './index'
 
 const message = [
   "W", "e", "l", "c", "o", "m", "e", '\xa0',
@@ -47,7 +47,7 @@ const LoadingScreen = () => {
     <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
       {isLoading ? (
         <div className="flex flex-row h-screen mx-auto items-center justify-center">
-          <LoadingBubble />
+          <LoadingDots />
         </div>
       ) : (
         <div className="flex flex-row h-screen mx-auto items-center justify-center">
