@@ -55,7 +55,7 @@ const About = () => {
         message me about any new opportunities or if you would like to have a conversation!
       </motion.p>
 
-      <div className="mt-16 flex flex-wrap gap-10 justify-center items-center">
+      <div className="mt-8 flex flex-wrap gap-10 justify-center items-center">
         {services.map((service, index) => (
           <ServiceCard title={service.title} index={index} {...service}/>
         ))}
