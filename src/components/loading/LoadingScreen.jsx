@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { styles } from '../../styles'
 import { LoadingDots } from './index'
+import { StarsCanvas } from '../../components'
 
 const message = [
   "W", "e", "l", "c", "o", "m", "e", '\xa0',
@@ -44,19 +45,20 @@ const LoadingScreen = () => {
   }, [])
 
   return (
-    <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+    <>
       {isLoading ? (
-        <div className="flex flex-row h-screen mx-auto items-center justify-center">
-          <LoadingDots />
-        </div>
+        <LoadingDots />
       ) : (
-        <div className="flex flex-row h-screen mx-auto items-center justify-center">
-          {message.map((char, index) => (
-            <LoadingCharacter character={char} index={index} key={index}/>
-          ))}
-        </div>
+        <>
+          <div className="flex flex-row h-screen mx-auto items-center justify-center">
+            {message.map((char, index) => (
+              <LoadingCharacter character={char} index={index} key={index}/>
+            ))}
+          </div>
+          <StarsCanvas />
+        </>
       )}
-    </div>
+    </>
   )
 }
 
