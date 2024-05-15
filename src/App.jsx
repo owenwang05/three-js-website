@@ -1,12 +1,11 @@
 import { BrowserRouter } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { container } from './utils/motion'
 import { About, Contact, Experience, Hero, Navbar, Tech, Works, StarsCanvas, LoadingScreen } from './components'
 
 function App() {
 
-  const [isLoading, setIsLoading] = useState(false) // remember to change to true!!?!?!?!?
+  const [isLoading, setIsLoading] = useState(true) 
 
   useEffect(() => {
     setTimeout(() => {
@@ -20,12 +19,10 @@ function App() {
         <LoadingScreen />
       ) : (
         <div className="relative z-0 bg-primary">
-          <motion.div 
-            className="bg-hero-pattern bg-cover bg-no-repeat bg-center"
-          >
+          <div className="bg-gradient-to-b from-primary to-primary via-[#160d2b]">
             <Navbar />
             <Hero />
-          </motion.div>  
+          </div>  
           <div>
             <About />
             <Experience />
