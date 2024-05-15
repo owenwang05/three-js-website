@@ -13,9 +13,9 @@ const Navbar = () => {
 
   return (
     <motion.nav 
-      initial={{opacity:0, y:"-50%"}} 
-      animate={{opacity:1, y:0}} 
-      transition={{duration:1, ease: "easeIn", delay:2}} 
+      initial={{opacity:0}} 
+      animate={{opacity:1}} 
+      transition={{duration:0.5, ease: "easeIn", delay:1}} 
       className={`${styles.paddingX} w-full flex items-center py-5 xxl:py-6 fixed top-0 z-20 backdrop-filter backdrop-blur-lg border-b border-[#162435]`}
     >
       <motion.div className="w-full flex justify-between items-center max-w-7xl xxl:max-w-[1536px] mx-auto">
