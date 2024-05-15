@@ -7,7 +7,7 @@ import { ComputersCanvas } from './canvas'
 const Hero = () => {
   return (
     <motion.section className="relative w-full h-screen mx-auto block items-center justify-center">
-      <div className="w-full xxxl:h-[1400px] h-screen">
+      <div className="w-full xxxl:h-[1350px] h-screen">
         <motion.div className="flex flex-col w-full xs:h-full h-[800px]">
           <motion.div 
             variants={container(6, 0.2)}
