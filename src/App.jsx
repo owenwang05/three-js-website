@@ -1,6 +1,7 @@
 import { BrowserRouter } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
+import { container } from './utils/motion'
 import { About, Contact, Experience, Hero, Navbar, Tech, Works, StarsCanvas, LoadingScreen } from './components'
 
 function App() {
@@ -20,6 +21,9 @@ function App() {
       ) : (
         <div className="relative z-0 bg-primary">
           <motion.div 
+            variants={container(2, 5)}
+            initial="hidden"
+            animate="show"
             className="bg-hero-pattern bg-cover bg-no-repeat bg-center"
           >
             <Navbar />

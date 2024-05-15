@@ -6,11 +6,11 @@ import { ComputersCanvas } from './canvas'
 
 const Hero = () => {
   return (
-    <section className="relative w-full h-screen mx-auto block items-center justify-center">
+    <motion.section className="relative w-full h-screen mx-auto block items-center justify-center">
       <div className="w-full xxxl:h-[1400px] h-screen">
-        <motion.div variants={container(2)} initial="hidden" animate="show" className="flex flex-col w-full xs:h-full h-[800px]">
+        <motion.div variants={container(2, 3)} initial="hidden" animate="show" className="flex flex-col w-full xs:h-full h-[800px]">
           <motion.div 
-            variants={container(0)}
+            variants={container(1.5, 0.2)}
             initial="hidden"
             animate="show"
             className={`${styles.padding} max-w-7xl xxl:max-w-[1536px] mx-auto absolute z-0 inset-0 xs:top-[65px] top-[100px] xxl:top-[130px] xxxl:top-[180px] flex flex-row items-start gap-5`}
@@ -23,7 +23,7 @@ const Hero = () => {
 
             {/* contains hero text */}
             <motion.div
-              variants={container(0)}
+              variants={container(1.5, 0.2)}
               initial="hidden"
               animate="show"
             >
@@ -48,7 +48,7 @@ const Hero = () => {
           </motion.div>
         </motion.div>
       </div>
-    </section>
+    </motion.section>
   )
 }
 

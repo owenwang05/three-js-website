@@ -2,6 +2,8 @@ import { React, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { styles } from '../styles'
 import { navLinks } from '../constants'
+import { motion } from 'framer-motion'
+import { item, container } from '../utils/motion'
 import { logo, menu, close } from '../assets'
 
 const Navbar = () => {
@@ -10,8 +12,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false)
 
   return (
-    <nav className={`${styles.paddingX} w-full flex items-center py-5 xxl:py-6 fixed top-0 z-20 backdrop-filter backdrop-blur-lg border-b border-[#162435]`}>
-
+    <motion.nav variants={container(0, 0.5)} initial="hidden" animate="show" className={`${styles.paddingX} w-full flex items-center py-5 xxl:py-6 fixed top-0 z-20 backdrop-filter backdrop-blur-lg border-b border-[#162435]`}>
       <div className="w-full flex justify-between items-center max-w-7xl xxl:max-w-[1536px] mx-auto">
         <Link 
           to="/" 
@@ -21,15 +22,16 @@ const Navbar = () => {
             window.scrollTo(0, 0)
           }}
         >
-          <img src={logo} alt="logo" className="w-9 h-9 xxl:w-12 xxl:h-12 object-cover rounded-full"/>
-          <p className="text-white text-lg xxl:text-[24px] font-bold cursor-pointer">
+          <motion.img variants={item(15, "neg")} src={logo} alt="logo" className="w-9 h-9 xxl:w-12 xxl:h-12 object-cover rounded-full"/>
+          <motion.p variants={item(15, "neg")} className="text-white text-lg xxl:text-[24px] font-bold cursor-pointer">
             Owen Wang
-          </p>
+          </motion.p>
         </Link>
 
-        <ul className="list-none hidden sm:flex flex-row gap-4">
+        <motion.ul variants={container(0, 0.2)} initial="hidden" animate="show" className="list-none hidden sm:flex flex-row gap-4">
           {navLinks.map((link) => (
-            <li 
+            <motion.li 
+              variants={item(15, "neg")}
               key={link.id}
               className={
                 `${active === link.title ? "text-white underline" : "text-secondary"} hover:text-white text-lg xxl:text-[24px] font-medium cursor pointer px-3 py-2 xxl:px-4 xxl:py-3 hover:bg-[#221c41] rounded-xl`
@@ -39,9 +41,9 @@ const Navbar = () => {
               <a href={`#${link.id}`}>
                 {link.title}
               </a>
-            </li>
+            </motion.li>
           ))}
-        </ul>
+        </motion.ul>
 
         <div className="sm:hidden flex flex-1 justify-end items-center">
           <img 
@@ -75,7 +77,7 @@ const Navbar = () => {
 
       </div>
 
-    </nav>
+    </motion.nav>
   )
 }
 
