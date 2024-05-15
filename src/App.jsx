@@ -6,7 +6,7 @@ import { About, Contact, Experience, Hero, Navbar, Tech, Works, StarsCanvas, Loa
 
 function App() {
 
-  const [isLoading, setIsLoading] = useState(true) // remember to change to true!!?!?!?!?
+  const [isLoading, setIsLoading] = useState(false) // remember to change to true!!?!?!?!?
 
   useEffect(() => {
     setTimeout(() => {
@@ -21,9 +21,6 @@ function App() {
       ) : (
         <div className="relative z-0 bg-primary">
           <motion.div 
-            variants={container(2, 5)}
-            initial="hidden"
-            animate="show"
             className="bg-hero-pattern bg-cover bg-no-repeat bg-center"
           >
             <Navbar />

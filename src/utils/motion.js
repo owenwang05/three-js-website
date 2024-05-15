@@ -89,13 +89,12 @@ export const staggerContainer = (staggerChildren, delayChildren) => {
 
 export const container = (duration, stagger) => {
   return {
-    hidden: { opacity: 0 },
+    hidden: { opacity: 0.5 },
     show: {
       opacity: 1,
       transition: {
         staggerChildren: stagger,
         delayChildren: duration,
-        ease: "easeIn"
       }
     }
   }
