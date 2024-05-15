@@ -8,12 +8,12 @@ const Hero = () => {
   return (
     <section className="relative w-full h-screen mx-auto block items-center justify-center">
       <div className="w-full xxxl:h-[1400px] h-screen">
-        <motion.div variants={container(2)} initial="hidden" animate="show" className="flex flex-col w-full h-full">
+        <motion.div variants={container(2)} initial="hidden" animate="show" className="flex flex-col w-full xs:h-full h-[800px]">
           <motion.div 
             variants={container(0)}
             initial="hidden"
             animate="show"
-            className={`${styles.padding} max-w-7xl xxl:max-w-[1536px] mx-auto absolute z-0 inset-0 xs:top-[65px] top-[120px] xxl:top-[130px] xxxl:top-[180px] flex flex-row items-start gap-5`}
+            className={`${styles.padding} max-w-7xl xxl:max-w-[1536px] mx-auto absolute z-0 inset-0 xs:top-[65px] top-[100px] xxl:top-[130px] xxxl:top-[180px] flex flex-row items-start gap-5`}
           >
             {/* contains side bar */}
             <motion.div variants={item(10, "pos")} className="flex flex-col justify-center items-center mt-5">
