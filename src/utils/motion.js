@@ -86,3 +86,29 @@ export const staggerContainer = (staggerChildren, delayChildren) => {
     },
   };
 };
+
+export const container = (duration) => {
+  return {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2,
+        delayChildren: duration
+      }
+    }
+  }
+}
+
+export const item = (percentageShift, direction) => {
+  return {
+    hidden: {
+      opacity: 0, 
+      y: direction === "pos" ? `${percentageShift}%`: `-${percentageShift}%`
+    },
+    show: { 
+      opacity: 1, 
+      y: 0 
+    }
+  }
+}
