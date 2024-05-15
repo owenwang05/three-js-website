@@ -1,6 +1,5 @@
 import { BrowserRouter } from 'react-router-dom'
 import { useState, useEffect } from 'react'
-import { motion } from 'framer-motion'
 import { About, Contact, Experience, Hero, Navbar, Tech, Works, StarsCanvas, LoadingScreen } from './components'
 
 function App() {
@@ -19,7 +18,7 @@ function App() {
         <LoadingScreen />
       ) : (
         <div className="relative z-0 bg-primary">
-          <div className="bg-gradient-to-b from-primary to-primary via-[#160d2b]">
+          <div className="bg-gradient-to-b from-primary from-15% to-primary via-[#1f123f] via-70%">
             <Navbar />
             <Hero />
           </div>  
