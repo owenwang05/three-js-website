@@ -75,7 +75,7 @@ const ComputersCanvas = () => {
         <Preload all />
       </Canvas>
 
-      <div className="relative xs:bottom-24 xxl:bottom-28 w-full flex justify-center items-center">
+      <div className="relative xs:bottom-24 bottom-32 xxl:bottom-28 w-full flex justify-center items-center">
         <a href="#about">
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2 '>
             <motion.div 
