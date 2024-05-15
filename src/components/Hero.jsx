@@ -10,7 +10,7 @@ const Hero = () => {
       <div className="w-full xxxl:h-[1400px] h-screen">
         <motion.div className="flex flex-col w-full xs:h-full h-[800px]">
           <motion.div 
-            variants={container(3.5, 0.2)}
+            variants={container(6, 0.2)}
             initial="hidden"
             animate="show"
             className={`${styles.padding} max-w-7xl xxl:max-w-[1536px] mx-auto absolute z-0 inset-0 xs:top-[65px] top-[100px] xxl:top-[130px] xxxl:top-[180px] flex flex-row items-start gap-5`}
@@ -39,7 +39,7 @@ const Hero = () => {
           </motion.div>
           
           {/* contains computer */}
-          <motion.div initial={{opacity: 0}} animate={{opacity:1}} transition={{delay: 4.5, duration: 2}} className="w-full h-full">
+          <motion.div initial={{opacity: 0}} animate={{opacity:1}} transition={{delay: 5.5, duration: 1}} className="w-full h-full">
             <ComputersCanvas />
           </motion.div>
         </motion.div>

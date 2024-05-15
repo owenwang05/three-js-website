@@ -12,8 +12,13 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false)
 
   return (
-    <motion.nav variants={container(2.5, 0.4)} initial="hidden" animate="show" className={`${styles.paddingX} w-full flex items-center py-5 xxl:py-6 fixed top-0 z-20 backdrop-filter backdrop-blur-lg border-b border-[#162435]`}>
-      <div className="w-full flex justify-between items-center max-w-7xl xxl:max-w-[1536px] mx-auto">
+    <motion.nav 
+      initial={{opacity:0, y:"-50%"}} 
+      animate={{opacity:1, y:0}} 
+      transition={{duration:1, ease: "easeIn", delay:2}} 
+      className={`${styles.paddingX} w-full flex items-center py-5 xxl:py-6 fixed top-0 z-20 backdrop-filter backdrop-blur-lg border-b border-[#162435]`}
+    >
+      <motion.div className="w-full flex justify-between items-center max-w-7xl xxl:max-w-[1536px] mx-auto">
         <Link 
           to="/" 
           className="flex items-center gap-2" 
@@ -22,13 +27,25 @@ const Navbar = () => {
             window.scrollTo(0, 0)
           }}
         >
-          <motion.img initial={{opacity: 0}} animate={{opacity:1}} transition={{delay: 0.5, duration: 0.5}} src={logo} alt="logo" className="w-9 h-9 xxl:w-12 xxl:h-12 object-cover rounded-full"/>
-          <motion.p initial={{opacity: 0}} animate={{opacity:1}} transition={{delay: 1, duration: 0.2}} className="text-white text-lg xxl:text-[24px] font-bold cursor-pointer">
+          <motion.img 
+            initial={{opacity:0, y:"-15%"}} 
+            animate={{opacity:1, y:0}} 
+            transition={{duration:0.2, delay:3}} 
+            src={logo} 
+            alt="logo" 
+            className="w-9 h-9 xxl:w-12 xxl:h-12 object-cover rounded-full"
+          />
+          <motion.p 
+            initial={{opacity:0, y:"-15%"}} 
+            animate={{opacity:1, y:0}} 
+            transition={{duration:0.2, delay:3.5}}
+            className="text-white text-lg xxl:text-[24px] font-bold cursor-pointer"
+          >
             Owen Wang
           </motion.p>
         </Link>
 
-        <motion.ul variants={container(2.5, 0.2)} initial="hidden" animate="show" className="list-none hidden sm:flex flex-row gap-4">
+        <motion.ul variants={container(4.5, 0.2)} initial="hidden" animate="show" className="list-none hidden sm:flex flex-row gap-4">
           {navLinks.map((link) => (
             <motion.li 
               variants={item(20, "neg")}
@@ -75,7 +92,7 @@ const Navbar = () => {
           </ul>
         </div>
 
-      </div>
+      </motion.div>
 
     </motion.nav>
   )
