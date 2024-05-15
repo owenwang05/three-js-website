@@ -26,7 +26,7 @@ const LoadingDot = ({delay_time}) => {
 const LoadingBubble = () => {
   return (
     <div
-      className="flex flex-row gap-8 w-full h-screen items-center justify-center"
+      className="flex flex-row gap-8 w-full h-screen items-center justify-center bg-gradient-to-b from-primary from-15% to-primary via-[#1f123f] via-70%"
     >
       <LoadingDot delay_time={0.1}/>
       <LoadingDot delay_time={0.2}/>
