@@ -7,6 +7,8 @@ import { services } from '../constants'
 import { fadeIn, textVariant } from '../utils/motion'
 import { SectionWrapper } from './hoc'
 
+import { link } from "../assets"
+ 
 const ServiceCard = ({index, title, icon}) => {
   return(
     <Tilt className="xs:w-[185px] xl:w-[250px] w-full">
@@ -44,15 +46,22 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] xxl:text-[18px] max-w-3xl leading-[30px]"
       >
-        I am currently a freshman at the UIUC studying Computer Engineering. 
-        I have a strong interest in Machine Learning, AI, and Full-stack Development,
-        and their real world applications.
+        I am currently at UIUC studying Computer Engineering. 
+        I have a strong interest in ML/AI, Distributed Sytems, Embedded Systems,
+        Full-stack Development, and their applications.
 
-        I'm a skilled sofware engineer with experience in Javascript and various frameworks. 
-        Additionally, I have utilized python libraries to create neural networks and object 
-        detection. Outside of work, you can find me playing tennis, spending time with friends, 
-        or deeply invested in a novel. I'm always open to meeting new people, so feel free to 
-        message me about any new opportunities or if you would like to have a conversation!
+        I'm a skilled sofware engineer with experience in Javascript, C++ and python alongside
+        various frameworks. Outside of work, you can find me playing tennis or spending time
+        with friends. I'm always open to meeting new people, so feel free to message me about 
+        any new opportunities or if you would like to have a conversation!
+
+        <a href="https://drive.google.com/file/d/1svD1zHL9mjnV4aJYk5vwx28pNLbDKOMi/view?usp=sharing" target="blank" className='text-white opacity-85 hover:cursor-pointer mt-2 flex flex-row w-fit items-center justify-center rounded-lg'>
+          <p className="hover:underline">
+            Resume 
+          </p>
+          {'\xa0'}
+          <img src={link} className='h-5 w-5'/>
+        </a>
       </motion.p>
 
       <div className="mt-8 flex flex-wrap gap-10 justify-center items-center">
