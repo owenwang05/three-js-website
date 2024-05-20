@@ -33,6 +33,9 @@ import tripguide from "./tripguide.png";
 
 import link from "./link.png"
 
+import linkedin from "./linkedin.svg"
+import githubFooter from "./github.svg"
+
 export {
   logo,
   backend,
@@ -63,5 +66,7 @@ export {
   carrent,
   jobit,
   tripguide,
-  link
+  link,
+  linkedin,
+  githubFooter
 };
