@@ -1,12 +1,7 @@
-import { useState} from 'react'
-
 import { linkedin, githubFooter } from '../assets'
-import { navLinks } from '../constants'
 import { SectionWrapper } from './hoc'
 
 const Footer = () => {
-
-  const [active, setActive] = useState("")
 
   return (
     <section className="flex flex-row justify-between border-t border-[#162435] py-6 px-3">

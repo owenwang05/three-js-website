@@ -54,8 +54,8 @@ const LoadingScreen = () => {
             {message.map((char, index) => (
               <LoadingCharacter character={char} index={index} key={index}/>
             ))}
+            <StarsCanvas />
           </div>
-          <StarsCanvas />
         </>
       )}
     </>
