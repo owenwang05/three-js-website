@@ -1,6 +1,6 @@
 import { BrowserRouter } from 'react-router-dom'
 import { useState, useEffect } from 'react'
-import { About, Contact, Experience, Hero, Navbar, Tech, Works, StarsCanvas, LoadingScreen } from './components'
+import { About, Contact, Experience, Hero, Navbar, Tech, Works, StarsCanvas, LoadingScreen, Footer } from './components'
 
 function App() {
 
@@ -31,6 +31,9 @@ function App() {
           <div className="relative z-0">
             <Contact />
             <StarsCanvas />
+          </div>
+          <div>
+            <Footer />
           </div>
         </div>
       )}
