@@ -26,7 +26,7 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className="mt-10 flex flex-wrap gap-7">
+      <div className="mt-4 xxxl:mt-8 flex flex-wrap gap-7">
         {projects.map((project, id) => (
           <ProjectCard 
             key={`project-${id}`}
@@ -53,7 +53,7 @@ const ProjectCard = ({index, name, description, tags, image, source_code_link}) 
         }}
         className="bg-tertiary p-5 rounded-2xl sm:w-[310px] xl:w-[355px] xxl:w-[360px] w-full"
       >
-        <div className="relative w-full h-[230px] xxl:h-[320px]">
+        <div className="relative w-full h-[230px] xxl:h-[300px]">
           <img 
             src={image}
             alt={name}

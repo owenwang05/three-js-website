@@ -50,7 +50,7 @@ const About = () => {
         I have a strong interest in ML/AI, Distributed Sytems, Embedded Systems,
         Full-stack Development, and their applications.
 
-        I'm a skilled sofware engineer with experience in Javascript, C++ and python alongside
+        I'm a skilled software engineer with experience in C++, Python, and Javascript alongside
         various frameworks. Outside of work, you can find me playing tennis or spending time
         with friends. I'm always open to meeting new people, so feel free to message me about 
         any new opportunities or if you would like to have a conversation!
