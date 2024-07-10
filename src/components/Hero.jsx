@@ -33,7 +33,7 @@ const Hero = () => {
                 variants={item(15, "pos")}
                 className={`${styles.heroSubText} mt-2 text-white-100`}
               >
-                I develop web applications that <br className="sm:block hidden "/>address <span className="bg-gradient-to-l from-[#8359df] to-[#d6c7f2] via-[#d6c7f2] via-15% text-transparent bg-clip-text">real-life</span> problems
+                I develop web applications that <br className="sm:block hidden "/>address <span className="bg-gradient-to-l from-[#8359df] to-[#d6c7f2] via-[#d6c7f2] via-15% text-transparent bg-clip-text">real-world</span> problems
               </motion.p>
             </motion.div>
           </motion.div>

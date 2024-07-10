@@ -25,16 +25,17 @@ import jacs from './company/jacs-solutions.png'
 import enactus from './company/enactus.png'
 import ev from './company/ev-concept.jpg'
 import vex from './company/vex-robotics.jpg'
-import cobweb from './company/cobweb.jpg'
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import spotifyvault from "./spotifyvault.png"
 
 import link from "./link.png"
 
 import linkedin from "./linkedin.svg"
 import githubFooter from "./github.svg"
+import comingsoon from "./comingsoon.jpg"
 
 export {
   logo,
@@ -62,11 +63,12 @@ export {
   enactus, 
   ev, 
   vex, 
-  cobweb,
   carrent,
   jobit,
   tripguide,
+  spotifyvault,
   link,
   linkedin,
-  githubFooter
+  githubFooter,
+  comingsoon
 };
