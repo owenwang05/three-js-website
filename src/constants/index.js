@@ -129,7 +129,7 @@ const experiences = [
     ],
   },
   {
-    title: "Project Manager",
+    title: "Project Lead",
     company_name: "Hydrologic",
     icon: enactus,
     iconBg: "#E6DEDD",
