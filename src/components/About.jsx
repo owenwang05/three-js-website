@@ -55,7 +55,7 @@ const About = () => {
         with friends. I'm always open to meeting new people, so feel free to message me about 
         any new opportunities or if you would like to have a conversation!
 
-        <a href="https://drive.google.com/file/d/1svD1zHL9mjnV4aJYk5vwx28pNLbDKOMi/view?usp=sharing" target="blank" className='text-white opacity-85 hover:cursor-pointer mt-2 flex flex-row w-fit items-center justify-center rounded-lg'>
+        <a href="https://drive.google.com/file/d/162qEJsYWjA3aDPkRZdXAJooqkMuw4Asv/view?usp=sharing" target="blank" className='text-white opacity-85 hover:cursor-pointer mt-2 flex flex-row w-fit items-center justify-center rounded-lg'>
           <p className="hover:underline">
             Resume 
           </p>
