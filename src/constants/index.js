@@ -20,8 +20,6 @@ import {
   ev, 
   vex,
   spotifyvault, 
-  jobit,
-  tripguide,
   threejs,
   comingsoon,
 } from "../assets";

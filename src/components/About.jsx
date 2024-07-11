@@ -7,7 +7,7 @@ import { services } from '../constants'
 import { fadeIn, textVariant } from '../utils/motion'
 import { SectionWrapper } from './hoc'
 
-import { link } from "../assets"
+import { link, resume } from "../assets"
  
 const ServiceCard = ({index, title, icon}) => {
   return(
@@ -55,7 +55,7 @@ const About = () => {
         with friends. I'm always open to meeting new people, so feel free to message me about 
         any new opportunities or if you would like to have a conversation!
 
-        <a href="https://drive.google.com/file/d/162qEJsYWjA3aDPkRZdXAJooqkMuw4Asv/view?usp=sharing" target="blank" className='text-white opacity-85 hover:cursor-pointer mt-2 flex flex-row w-fit items-center justify-center rounded-lg'>
+        <a href={resume} target="blank" className='text-white opacity-85 hover:cursor-pointer mt-2 flex flex-row w-fit items-center justify-center rounded-lg'>
           <p className="hover:underline">
             Resume 
           </p>

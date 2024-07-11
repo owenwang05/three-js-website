@@ -26,16 +26,15 @@ import enactus from './company/enactus.png'
 import ev from './company/ev-concept.jpg'
 import vex from './company/vex-robotics.jpg'
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import comingsoon from './comingsoon.jpg'
 import spotifyvault from "./spotifyvault.png"
 
 import link from "./link.png"
 
 import linkedin from "./linkedin.svg"
 import githubFooter from "./github.svg"
-import comingsoon from "./comingsoon.jpg"
+
+import resume from "./Resume 07-2024.pdf"
 
 export {
   logo,
@@ -63,12 +62,10 @@ export {
   enactus, 
   ev, 
   vex, 
-  carrent,
-  jobit,
-  tripguide,
+  comingsoon,
   spotifyvault,
   link,
   linkedin,
   githubFooter,
-  comingsoon
+  resume
 };
