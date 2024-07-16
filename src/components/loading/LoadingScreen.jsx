@@ -25,7 +25,7 @@ const LoadingCharacter = ({character, index}) => {
       transition={{
         type: "intertia",
         velocity: 50,
-        delay: index*0.08
+        delay: index*0.05
       }}
       className={`${styles.heroSubText} text-white font-normal`}
     >
@@ -41,7 +41,7 @@ const LoadingScreen = () => {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false)
-    }, 3000)
+    }, 1500)
   }, [])
 
   return (
