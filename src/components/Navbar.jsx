@@ -1,4 +1,4 @@
-import { React, useState } from 'react'
+import { React, useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { styles } from '../styles'
 import { navLinks } from '../constants'
@@ -11,6 +11,20 @@ const Navbar = () => {
   const [active, setActive] = useState("")
   const [toggle, setToggle] = useState(false)
 
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 500px)");
+    setIsMobile(mediaQuery.matches);
+    const handleMediaQueryChange = (event) => {
+      setIsMobile(event.matches);
+    };
+    mediaQuery.addEventListener("change", handleMediaQueryChange);
+    return () => {
+      mediaQuery.removeEventListener("change", handleMediaQueryChange);
+    };
+  }, []);
+
   return (
     <motion.nav 
       className={`${styles.paddingX} w-full flex items-center py-5 xxl:py-6 fixed top-0 z-20 backdrop-filter backdrop-blur-lg border-b border-[#162435]`}
@@ -18,24 +32,24 @@ const Navbar = () => {
       <motion.div className="w-full flex justify-between items-center max-w-7xl xxl:max-w-[1536px] mx-auto">
         <Link 
           to="/" 
-          className="flex items-center gap-2" 
+          className="flex flex-row items-center gap-2" 
           onClick={() => {
             setActive("")
             window.scrollTo(0, 0)
           }}
         >
           <motion.img 
-            initial={{opacity:0, y:"-15%"}} 
-            animate={{opacity:1, y:0}} 
-            transition={{duration:0.2, delay:1}} 
+            initial={isMobile ? {opacity:1} : {opacity:0, y:"-15%"}} 
+            animate={isMobile ? null : {opacity:1, y:0}} 
+            transition={isMobile ? null : {duration:0.2, delay:1}} 
             src={logo} 
             alt="logo" 
             className="w-9 h-9 xxl:w-12 xxl:h-12 object-cover rounded-full"
           />
           <motion.p 
-            initial={{opacity:0, y:"-15%"}} 
-            animate={{opacity:1, y:0}} 
-            transition={{duration:0.2, delay:1.5}}
+            initial={isMobile ? {opacity:1} : {opacity:0, y:"-15%"}} 
+            animate={isMobile ? null : {opacity:1, y:0}} 
+            transition={isMobile ? null : {duration:0.2, delay:1.5}}
             className="text-white text-lg xxl:text-[24px] font-bold cursor-pointer"
           >
             Owen Wang
