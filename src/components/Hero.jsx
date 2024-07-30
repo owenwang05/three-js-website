@@ -33,8 +33,9 @@ const Hero = () => {
           >
             {/* contains side bar */}
             <motion.div 
-              variants={item(15, "pos")} 
-              className="flex flex-col justify-center items-center mt-5"
+              variants={isMobile ? null : item(15, "pos")} 
+              initial={isMobile ? {opacity:1} : "hidden"}
+              className={`flex flex-col justify-center items-center ${isMobile ? "" : "mt-5"}`}
             >
               <div className="w-5 h-5 rounded-full bg-[#915eff]" />
               <div className="w-1 sm:h-80 h-40 violet-gradient" />
@@ -43,13 +44,15 @@ const Hero = () => {
             {/* contains hero text */}
             <motion.div>
               <motion.h1 
-                variants={item(15, "pos")} 
+                variants={isMobile ? null : item(15, "pos")} 
+                initial={isMobile ? {opacity:1} : "hidden"}
                 className={`${styles.heroHeadText} text-white`}
               >
                 Hi, I'm <span className="bg-gradient-to-l from-[#8359df] to-[#8150ea] via-[#cbb7ef] via-45% text-transparent bg-clip-text">Owen</span>
               </motion.h1>
               <motion.p 
-                variants={item(15, "pos")} 
+                variants={isMobile ? null : item(15, "pos")} 
+                initial={isMobile ? {opacity:1} : "hidden"}
                 className={`${styles.heroSubText} mt-2 text-white-100`}
               >
                 I develop web applications that <br className="sm:block hidden "/>address <span className="bg-gradient-to-l from-[#8359df] to-[#d6c7f2] via-[#d6c7f2] via-15% text-transparent bg-clip-text">real-world</span> problems
@@ -58,7 +61,7 @@ const Hero = () => {
           </motion.div>
           
           {/* contains computer */}
-          <motion.div initial={{opacity: 0}} animate={{opacity:1}} transition={isMobile ? {delay:4.5, duration:1} : {delay: 2.5, duration: 1}} className="w-full h-[650px] xs:h-full">
+          <motion.div initial={{opacity: 0}} animate={{opacity:1}} transition={isMobile ? {delay: 0, duration: 1} : {delay: 2.5, duration: 1}} className="w-full h-[725px] xs:h-full">
             <ComputersCanvas />
           </motion.div>
         </motion.div>

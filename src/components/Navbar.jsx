@@ -56,10 +56,15 @@ const Navbar = () => {
           </motion.p>
         </Link>
 
-        <motion.ul variants={container(2.5, 0.2)} initial="hidden" animate="show" className="list-none hidden sm:flex flex-row gap-4">
+        <motion.ul 
+          variants={isMobile ? null : container(2.5, 0.2)} 
+          initial={isMobile ? {opacity:1} : "hidden"}
+          animate="show" 
+          className="list-none hidden sm:flex flex-row gap-4
+        ">
           {navLinks.map((link) => (
             <motion.li 
-              variants={item(20, "neg")}
+              variants={isMobile ? null : item(20, "neg")}
               key={link.id}
               className={
                 `${active === link.title ? "text-white underline" : "text-secondary"} hover:text-white text-lg xxl:text-[24px] font-medium cursor pointer px-3 py-2 xxl:px-4 xxl:py-3 hover:bg-[#221c41] rounded-xl`
