@@ -61,7 +61,12 @@ const Hero = () => {
           </motion.div>
           
           {/* contains computer */}
-          <motion.div initial={{opacity: 0}} animate={{opacity:1}} transition={isMobile ? {delay: 0, duration: 1} : {delay: 2.5, duration: 1}} className="w-full h-[725px] xs:h-full">
+          <motion.div 
+            initial={isMobile ? {opacity:1} : {opacity: 0}} 
+            animate={isMobile ? null : {opacity:1}} 
+            transition={isMobile ? null : {delay: 2.5, duration: 1}} 
+            className="w-full h-[725px] xs:h-full"
+          >
             <ComputersCanvas />
           </motion.div>
         </motion.div>
