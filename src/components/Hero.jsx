@@ -23,7 +23,7 @@ const Hero = () => {
 
   return (
     <motion.section className="relative w-full h-screen mx-auto block items-center justify-center">
-      <div className="w-full xxxl:h-[1350px] h-screen">
+      <div className="w-full xxxl:h-[1275px] h-screen">
         <motion.div className="flex flex-col w-full xs:h-full h-[800px]">
           <motion.div 
             variants={isMobile ? null : container(2, 0.2)}
