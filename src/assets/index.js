@@ -28,13 +28,17 @@ import vex from './company/vex-robotics.jpg'
 
 import comingsoon from './comingsoon.jpg'
 import spotifyvault from "./spotifyvault.png"
+import dishdetect from "./dish-detect.png"
+import skimlit from "./skimlit.png"
+import chaingpt from "./chain-gpt.png"
 
 import link from "./link.png"
 
 import linkedin from "./linkedin.svg"
 import githubFooter from "./github.svg"
 
-import resume from "./Resume 07-2024.pdf"
+import resume from "./Resume 08-2024.pdf"
+import resume2 from "./Resume 07-2024.pdf"
 
 export {
   logo,
@@ -64,6 +68,9 @@ export {
   vex, 
   comingsoon,
   spotifyvault,
+  dishdetect, 
+  chaingpt, 
+  skimlit,
   link,
   linkedin,
   githubFooter,

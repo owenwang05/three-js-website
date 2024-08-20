@@ -18,8 +18,10 @@ import {
   jacs, 
   enactus, 
   ev, 
-  vex,
-  spotifyvault, 
+  spotifyvault,
+  dishdetect, 
+  skimlit,
+  chaingpt,
   threejs,
   comingsoon,
 } from "../assets";
@@ -45,19 +47,19 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Embedded Systems Developer",
+    title: "Machine Learning Developer",
     icon: web,
   },
   {
-    title: "Distributed Systems Developer",
+    title: "Full-Stack Web Developer",
     icon: mobile,
   },
   {
-    title: "AI/ML Developer",
+    title: "Embedded Systems Developer",
     icon: backend,
   },
   {
-    title: "Full-Stack Web Developer",
+    title: "Distributed Systems Developer",
     icon: creator,
   },
 ];
@@ -125,7 +127,10 @@ const experiences = [
     iconBg: "#383E56",
     date: "June 2024 - Present",
     points: [
-      "Developing the company's MDM.",
+      "Designed FOTA (firmware over the air) features for mobile device management system via a WebSocket communication established between server and devices through Spring Boot.",
+      "Migrated frontend to React.js and leveraged RESTful API to create 2 microservices with 10+ endpoints, enchancing client-side CRUD operations and optimizing server performance by 5%",
+      "Refactored backend logic into a Model-View-Controller architecture, streamlining FOTA management and saving customers 3+ hours of manual work.",
+      "Resolved 15+ bugs by drafting and deploying integration tests with the Spring Boot testing library."
     ],
   },
   {
@@ -136,8 +141,8 @@ const experiences = [
     date: "Oct 2023 - May 2024",
     points: [
       "Established an ESP32 to Firebase Realtime-Database connection to retrieve University Housing shower statistics and analyzed data to reduce average water consumption by 10%.",
-      "Directed a group of four to architect the core structure of the web-app using React.js Tailwind CSS, and Chart.js, implementing filtering, saving, and comparison functionalities. ",
-      "Utilized Jira and Slack to streamline project management, delivering 20% ahead of schedule and 10% under budget." 
+      "Led a group of four to architect filtering, saving, and comparison functionalities using Next.js and Tailwind.",
+      "Utilized Jira to apply SCRUM principles, delivering 20% ahead of schedule and 7% under budget." 
     ],
   },
   {
@@ -152,24 +157,34 @@ const experiences = [
       "Migrated model onto a Microcontroller through C++ and STM32 IDE, improving efficiency of BMS by 30%.",
     ],
   },
-  {
-    title: "Software Team",
-    company_name: "UIUC VEX Robotics",
-    icon: vex, 
-    iconbg: "#E6DEDD",
-    date: "Aug 2023 - Jan 2024",
-    points: [
-      "Created a computer vision model using OpenCV and Python to detect green “acorn” shaped objects.",
-      "Developed an algorithm that tracks and draws contours at varying distances and lightings by estimating circularity."
-    ]
-  },
 ];
 
 const projects = [
   {
+    name: "Road Test",
+    description:
+      "Creating object detection model using YOLOv9 and an LSTM network in TensorFlow to automate driving tests.",
+    tags: [
+      {
+        name: "TensorFlow",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "YOLOv9",
+        color: "green-text-gradient",
+      },
+      {
+        name: "LSTM",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: comingsoon,
+    source_code_link: "https://github.com/owenwang05",
+  },
+  {
     name: "SkimLit",
     description:
-      "A summarizer that organizes and classifies items in an abstract from scientific papers using NLP in TensorFlow",
+      "A summarizer that organizes and classifies items in an abstract from scientific papers using a multimodal NLP model.",
     tags: [
       {
         name: "TensorFlow",
@@ -179,14 +194,18 @@ const projects = [
         name: "NLP",
         color: "green-text-gradient",
       },
+      {
+        name: "RNN",
+        color: "pink-text-gradient",
+      },
     ],
-    image: comingsoon,
-    source_code_link: "https://github.com/",
+    image: skimlit,
+    source_code_link: "https://github.com/owenwang05/skim-lit",
   },
   {
-    name: "Food Vision",
+    name: "Dish Detect",
     description:
-      "A comprehensive food classification software that utilizes Transfer Learning and Convolutional Neural Networks in TensorFlow",
+      "A comprehensive food classification software that utilizes Fine Tuning and Convolutional Neural Networks",
     tags: [
       {
         name: "TensorFlow",
@@ -201,8 +220,29 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: comingsoon,
-    source_code_link: "https://github.com/",
+    image: dishdetect,
+    source_code_link: "https://github.com/owenwang05/food-vision",
+  },
+  {
+    name: "Chain GPT",
+    description:
+      "An interactive LangChain documentation helper that uses agentic RAG conencted to an embedded Pinecone VectorDB",
+    tags: [
+      {
+        name: "LangChain",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "RAG",
+        color: "green-text-gradient",
+      },
+      {
+        name: "ReAct",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: chaingpt,
+    source_code_link: "https://github.com/owenwang05/chain-gpt",
   },
   {
     name: "Spotify Vault",
@@ -210,15 +250,15 @@ const projects = [
       "Full-stack application that allows users to track, store, and display historical Spotify listening statistics",
     tags: [
       {
-        name: "react",
+        name: "React.js",
         color: "blue-text-gradient",
       },
       {
-        name: "django",
+        name: "Django",
         color: "green-text-gradient",
       },
       {
-        name: "postgresql",
+        name: "PostgreSQL",
         color: "pink-text-gradient",
       },
       {
