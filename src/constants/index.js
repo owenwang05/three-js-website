@@ -59,7 +59,7 @@ const services = [
     icon: backend,
   },
   {
-    title: "Distributed Systems Developer",
+    title: "Systems Engineer",
     icon: creator,
   },
 ];
@@ -121,16 +121,17 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Embedded Systems Engineering Intern",
+    title: "Software Engineering Intern",
     company_name: "JACS Solutions",
     icon: jacs,
     iconBg: "#383E56",
     date: "June 2024 - Present",
     points: [
-      "Designed FOTA (firmware over the air) features for mobile device management system via a WebSocket communication established between server and devices through Spring Boot.",
-      "Migrated frontend to React.js and leveraged RESTful API to create 2 microservices with 10+ endpoints, enchancing client-side CRUD operations and optimizing server performance by 5%",
-      "Refactored backend logic into a Model-View-Controller architecture, streamlining FOTA management and saving customers 3+ hours of manual work.",
-      "Resolved 15+ bugs by drafting and deploying integration tests with the Spring Boot testing library."
+      "Designed FOTA (firmware over the air) features for mobile device management system housing 10,000+ devices.",
+      "Applied Spring Boot to create WebSocket management system with SSL communication and session management.",
+      "Migrated frontend to React.js, enhancing client-side CRUD operations and optimizing server performance by 5%.",
+      "Refactored backend logic into a Model-View-Controller architecture, streamlining FOTA management and saving customers 3+ hours of external manual work.",
+      "Drafted and deployed integration tests to evaluate API and controller with the Spring Boot testing library."
     ],
   },
   {
