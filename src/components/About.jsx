@@ -47,7 +47,7 @@ const About = () => {
         className="mt-4 text-secondary text-[17px] xxl:text-[18px] max-w-3xl leading-[30px]"
       >
         <p className='mb-2'>
-          I am a sophmore at UIUC Studying Computer Engineering with a goal is to 
+          I am a Computer Engineering student UIUC with a goal is to 
           utilize technology to address relevant issues within society. I am a skilled 
           software engineer with experience in C++, Python, and Javascript alongside
           various frameworks. 

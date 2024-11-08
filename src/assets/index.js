@@ -23,8 +23,8 @@ import threejs from "./tech/threejs.svg";
 
 import jacs from './company/jacs-solutions.png'
 import enactus from './company/enactus.png'
-import ev from './company/ev-concept.jpg'
-import vex from './company/vex-robotics.jpg'
+import onco from './company/onco.png'
+import dlab from './company/dlab.jpg'
 
 import comingsoon from './comingsoon.jpg'
 import spotifyvault from "./spotifyvault.png"
@@ -64,8 +64,8 @@ export {
   threejs,
   jacs, 
   enactus, 
-  ev, 
-  vex, 
+  onco, 
+  dlab,
   comingsoon,
   spotifyvault,
   dishdetect, 

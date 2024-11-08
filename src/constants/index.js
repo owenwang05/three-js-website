@@ -17,7 +17,8 @@ import {
   docker,
   jacs, 
   enactus, 
-  ev, 
+  onco,
+  dlab, 
   spotifyvault,
   dishdetect, 
   skimlit,
@@ -47,11 +48,11 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Machine Learning Developer",
+    title: "Full-Stack Developer",
     icon: web,
   },
   {
-    title: "Full-Stack Web Developer",
+    title: "Machine Learning Developer",
     icon: mobile,
   },
   {
@@ -59,7 +60,7 @@ const services = [
     icon: backend,
   },
   {
-    title: "Systems Engineer",
+    title: "UI/UX Developer",
     icon: creator,
   },
 ];
@@ -121,6 +122,29 @@ const technologies = [
 
 const experiences = [
   {
+    title: "Software Developer Intern",
+    company_name: "Oncosoft",
+    icon: onco,
+    iconBg: "#383E56",
+    date: "Oct 2024 - Present",
+    points: [
+      "Developing workflow management tools for Radiation Oncology.",
+    ],
+  },
+  {
+    title: "Software Engineer",
+    company_name: "Gies Disruption Lab",
+    icon: dlab,
+    iconBg: "#383E56",
+    date: "Sept 2024 - Present",
+    points: [
+      "Collaborating alongside Prof. Pieper to create aa chatbot using Agentic RAG and persistent memory modules.",
+      "Optimized response generation with K-Nearest-Neighbor search inside a FAISS vector DB, increasing model accuracy by 25% and reducing query latency by 35 %.",
+      "Developed file storage solutions on AWS S3, leveraging structured bucket organization and integrating Amazon CloudFront to enhance data retrieval efficiency and reduce access latency.",
+      "Implemented OAuth2 based user authentication in Node.js backend for secure session management"
+    ],
+  },
+  {
     title: "Software Engineering Intern",
     company_name: "JACS Solutions",
     icon: jacs,
@@ -144,18 +168,6 @@ const experiences = [
       "Established an ESP32 to Firebase Realtime-Database connection to retrieve University Housing shower statistics and analyzed data to reduce average water consumption by 10%.",
       "Led a group of four to architect filtering, saving, and comparison functionalities using Next.js and Tailwind.",
       "Utilized Jira to apply SCRUM principles, delivering 20% ahead of schedule and 7% under budget." 
-    ],
-  },
-  {
-    title: "Electrical Team",
-    company_name: "UIUC EV Concept",
-    icon: ev,
-    iconBg: "#383E56",
-    date: "Aug 2023 - Jan 2024",
-    points: [
-      "Developed BMS monitoring system by integrating a PCB that measures cell voltage, temperature, and current. ",
-      "Trained a machine learning model using linear regression that estimates SOC with values from a MATLAB simulation.",
-      "Migrated model onto a Microcontroller through C++ and STM32 IDE, improving efficiency of BMS by 30%.",
     ],
   },
 ];
