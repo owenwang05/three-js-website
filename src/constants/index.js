@@ -25,6 +25,8 @@ import {
   chaingpt,
   threejs,
   comingsoon,
+  country,
+  bam
 } from "../assets";
 
 export const navLinks = [
@@ -122,11 +124,31 @@ const technologies = [
 
 const experiences = [
   {
+    title: "Summer Associate Data Engineer",
+    company_name: "Balyasny Asset Management",
+    icon: bam,
+    iconBg: "#383E56",
+    date: "Incoming",
+    points: [
+      "Incoming Summer 2025.",
+    ],
+  },
+  {
+    title: "Software Developer Intern",
+    company_name: "Country Financial",
+    icon: country,
+    iconBg: "#383E56",
+    date: "Incoming",
+    points: [
+      "Incoming Spring 2025.",
+    ],
+  },
+  {
     title: "Software Developer Intern",
     company_name: "Oncosoft",
     icon: onco,
     iconBg: "#383E56",
-    date: "Oct 2024 - Present",
+    date: "Oct 2024 - Jan 2025",
     points: [
       "Developing workflow management tools for Radiation Oncology.",
     ],
@@ -136,7 +158,7 @@ const experiences = [
     company_name: "Gies Disruption Lab",
     icon: dlab,
     iconBg: "#383E56",
-    date: "Sept 2024 - Present",
+    date: "Sept 2024 - Dec 2024",
     points: [
       "Collaborating alongside Prof. Pieper to create aa chatbot using Agentic RAG and persistent memory modules.",
       "Optimized response generation with K-Nearest-Neighbor search inside a FAISS vector DB, increasing model accuracy by 25% and reducing query latency by 35 %.",
@@ -158,18 +180,18 @@ const experiences = [
       "Drafted and deployed integration tests to evaluate API and controller with the Spring Boot testing library."
     ],
   },
-  {
-    title: "Project Lead",
-    company_name: "Hydrologic",
-    icon: enactus,
-    iconBg: "#E6DEDD",
-    date: "Oct 2023 - May 2024",
-    points: [
-      "Established an ESP32 to Firebase Realtime-Database connection to retrieve University Housing shower statistics and analyzed data to reduce average water consumption by 10%.",
-      "Led a group of four to architect filtering, saving, and comparison functionalities using Next.js and Tailwind.",
-      "Utilized Jira to apply SCRUM principles, delivering 20% ahead of schedule and 7% under budget." 
-    ],
-  },
+  // {
+  //   title: "Project Lead",
+  //   company_name: "Hydrologic",
+  //   icon: enactus,
+  //   iconBg: "#E6DEDD",
+  //   date: "Oct 2023 - May 2024",
+  //   points: [
+  //     "Established an ESP32 to Firebase Realtime-Database connection to retrieve University Housing shower statistics and analyzed data to reduce average water consumption by 10%.",
+  //     "Led a group of four to architect filtering, saving, and comparison functionalities using Next.js and Tailwind.",
+  //     "Utilized Jira to apply SCRUM principles, delivering 20% ahead of schedule and 7% under budget." 
+  //   ],
+  // },
 ];
 
 const projects = [

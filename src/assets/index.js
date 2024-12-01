@@ -25,6 +25,8 @@ import jacs from './company/jacs-solutions.png'
 import enactus from './company/enactus.png'
 import onco from './company/onco.png'
 import dlab from './company/dlab.jpg'
+import bam from './company/bam.png'
+import country from './company/country.jpg'
 
 import comingsoon from './comingsoon.jpg'
 import spotifyvault from "./spotifyvault.png"
@@ -37,8 +39,9 @@ import link from "./link.png"
 import linkedin from "./linkedin.svg"
 import githubFooter from "./github.svg"
 
-import resume from "./Resume 09-2024.pdf"
-import resume2 from "./Resume 07-2024.pdf"
+import resume from "./Resume 11-2024.pdf"
+import resume2 from "./Resume 09-2024.pdf"
+import resume3 from "./Resume 07-2024.pdf"
 
 export {
   logo,
@@ -74,5 +77,7 @@ export {
   link,
   linkedin,
   githubFooter,
-  resume
+  resume,
+  country, 
+  bam
 };
