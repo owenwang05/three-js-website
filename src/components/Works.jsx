@@ -21,7 +21,7 @@ const Works = () => {
           className="mt-3 text-secondary text-[17px] xxl:text-[19px] max-w-3xl leading-[30px]"
         > 
           Following projects showcases my skills and experience through
-          real-world examples of my work. To view more of my work you can <a href="https://github.com/owen-wang-student" target="_blank" className='text-white hover:underline cursor-pointer'>click here</a>
+          real-world examples of my work. To view more of my work you can <a href="https://github.com/owenwang05" target="_blank" className='text-white hover:underline cursor-pointer'>click here</a>
         </motion.p>
       </div>
 
