@@ -58,7 +58,7 @@ const services = [
     icon: mobile,
   },
   {
-    title: "Embedded Systems Developer",
+    title: "Distributed Systems Developer",
     icon: backend,
   },
   {
@@ -130,7 +130,9 @@ const experiences = [
     iconBg: "#383E56",
     date: "Incoming",
     points: [
-      "Incoming Summer 2025.",
+      "Engineered and deployed a message outboxing microservice using ASP.NET and Kafka, improving message reliability for real-time tracker of 1000+ broker transactions.",
+      "Developed a broker research summarizer that auto-parses and annotates equity research documents, accelerating internal insights delivery by 3x and supporting decision-making for $500M+ in client assets.",
+      "Built an in-process distributed cache using Paxos for consensus and optimized SQL Server queries, resulting in 2.5x improvement in dashboard load times and a smoother experience for analysts."
     ],
   },
   {
@@ -140,7 +142,9 @@ const experiences = [
     iconBg: "#383E56",
     date: "Incoming",
     points: [
-      "Incoming Spring 2025.",
+      "Developed Python test automation framework proof of concept for Salesforce API using Selenium, BeautifulSoup, and RobotFramework, reducing manual testing time by 40%.",
+      "Containerized test automation framework with Docker and deployed it on an Azure Container Instance to integrate with existing CI/CD pipelines.",
+      "Wrote Python scripts to retrieve and organize Splunk API data, helping identify cost-saving opportunities that led to a 12\% reduction in monthly cloud expenses."
     ],
   },
   {
@@ -150,7 +154,7 @@ const experiences = [
     iconBg: "#383E56",
     date: "Oct 2024 - Jan 2025",
     points: [
-      "Developing workflow management tools for Radiation Oncology.",
+      "Developed workflow management tools for Radiation Oncology startup with $8M+ in series B funding.",
     ],
   },
   {
@@ -180,36 +184,24 @@ const experiences = [
       "Drafted and deployed integration tests to evaluate API and controller with the Spring Boot testing library."
     ],
   },
-  // {
-  //   title: "Project Lead",
-  //   company_name: "Hydrologic",
-  //   icon: enactus,
-  //   iconBg: "#E6DEDD",
-  //   date: "Oct 2023 - May 2024",
-  //   points: [
-  //     "Established an ESP32 to Firebase Realtime-Database connection to retrieve University Housing shower statistics and analyzed data to reduce average water consumption by 10%.",
-  //     "Led a group of four to architect filtering, saving, and comparison functionalities using Next.js and Tailwind.",
-  //     "Utilized Jira to apply SCRUM principles, delivering 20% ahead of schedule and 7% under budget." 
-  //   ],
-  // },
 ];
 
 const projects = [
   {
-    name: "Road Test",
+    name: "Carsties",
     description:
-      "Creating object detection model using YOLOv9 and an LSTM network in TensorFlow to automate driving tests.",
+      "Car auction site with a microservice architecture using Next.js, ASP.NET, and RabbitMQ.",
     tags: [
       {
-        name: "TensorFlow",
+        name: "Next.js",
         color: "blue-text-gradient",
       },
       {
-        name: "YOLOv9",
+        name: "ASP.NET",
         color: "green-text-gradient",
       },
       {
-        name: "LSTM",
+        name: "RabbitMQ",
         color: "pink-text-gradient",
       },
     ],

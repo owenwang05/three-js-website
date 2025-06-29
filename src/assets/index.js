@@ -39,7 +39,8 @@ import link from "./link.png"
 import linkedin from "./linkedin.svg"
 import githubFooter from "./github.svg"
 
-import resume from "./Resume 11-2024.pdf"
+import resume from "./Resume 06-2025.pdf"
+import resume1 from "./Resume 11-2024.pdf"
 import resume2 from "./Resume 09-2024.pdf"
 import resume3 from "./Resume 07-2024.pdf"
 
