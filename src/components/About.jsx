@@ -47,13 +47,13 @@ const About = () => {
         className="mt-4 text-secondary text-[17px] xxl:text-[18px] max-w-3xl leading-[30px]"
       >
         <p className='mb-2'>
-          I am a Computer Engineering student UIUC with a goal is to 
+          I am a Computer Engineering Alum @ UIUC with a goal is to 
           utilize technology to address relevant issues within society. I am a skilled 
-          software engineer with experience in C++, Python, and Javascript alongside
+          software engineer with experience in Typecript, C#, C++, and Python alongside
           various frameworks. 
         </p>
         <p className='mb-4'>
-          Outside of school, you can find me playing tennis or spending time
+          In my free time, you can find me playing tennis or spending time
           with friends. I am always open to meeting new people, so feel free to message me about 
           any new opportunities or if you would like to have a conversation!  
         </p>

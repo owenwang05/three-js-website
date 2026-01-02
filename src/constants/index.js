@@ -54,7 +54,7 @@ const services = [
     icon: web,
   },
   {
-    title: "Machine Learning Developer",
+    title: "Data Platform Developer",
     icon: mobile,
   },
   {
